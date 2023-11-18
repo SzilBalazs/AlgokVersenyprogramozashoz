@@ -11,3 +11,12 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
+
+pre .str, code .str { color: #1c99af; } /* string */
+pre .kwd, code .kwd { color: #1f55b9; } /* keyword */
+pre .com, code .com { color: #AEAEAE; font-style: italic; } /* comment */
+pre .typ, code .typ { color: #89bdff; } /* type */
+pre .lit, code .lit { color: #3387CC; } /* literal */
+pre .pun, code .pun { color: #C5C6C7; } /* punctuation */
+pre .pln, code .pln { color: #C5C6C7; } /* plaintext */
+pre .dec, code .dec { color: #3387CC; } /* decimal */
