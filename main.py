@@ -42,7 +42,7 @@ def build_index(header, articles):
     links = []
 
     for path in articles:
-        article_name = path.split("/")[-1].split(".md")[0]
+        article_name = os.path.basename(path).split(".")[0]
 
         if article_name == "index":
             continue
