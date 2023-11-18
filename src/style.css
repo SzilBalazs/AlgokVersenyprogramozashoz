@@ -1,17 +1,13 @@
 body {
-  background-color: #111111;
-  color: #fff;
+  background-color: #0B0C10;
+  color: #C5C6C7;
   font-size: 20px;
   padding-left: 20%;
   padding-right: 20%;
 }
 
 a {
-  color: #71a3f1;
+  color: #66FCF1;
   text-decoration: none;
   font-weight: bold;
-}
-
-h1, h2 {
-  margin: 0;
 }
