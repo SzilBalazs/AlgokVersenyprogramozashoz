@@ -18,12 +18,12 @@ def load_header(path):
 
 
 def create_html(header, md):
-    return header.replace("{{replace}}", markdown.markdown(md))
+    return header.replace("{{replace}}", markdown.markdown(md, extensions=["fenced_code"]))
 
 
 def build_markdown(header, articles):
     for path in articles:
-        article_name = path.split("/")[-1].split(".md")[0]
+        article_name = os.path.basename(path).split(".")[0]
 
         if article_name == "index":
             continue
@@ -56,7 +56,7 @@ def build_index(header, articles):
         article_section += f"<li><a href=\"{ref}\">{name}</a><br></li>"
 
     body = index_template.replace("{{article_section}}", article_section)
-    body = markdown.markdown(body)
+    body = markdown.markdown(body, extensions=["fenced_code"])
     html = header.replace("{{replace}}", body)
 
     out = open("build/index.html", "w")
