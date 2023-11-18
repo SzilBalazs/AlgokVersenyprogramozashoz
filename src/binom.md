@@ -1,5 +1,3 @@
-# Működik!!!! 
-
 # Binomial Coefficients
 
 [Test link](https://cp-algorithms.com/algebra/binary-exp.html)

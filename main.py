@@ -44,13 +44,16 @@ def build_index(header, articles):
     for path in articles:
         article_name = path.split("/")[-1].split(".md")[0]
 
-        if article_name != "index":
-            links.append((article_name, f"{article_name}.html"))
+        if article_name == "index":
+            continue
+
+        display_name = open(path).readline().split("# ")[1]
+        links.append((display_name, f"{article_name}.html"))
 
     article_section = ""
 
     for name, ref in links:
-        article_section += f"<a href=\"{ref}\">{name}</a><br>"
+        article_section += f"<li><a href=\"{ref}\">{name}</a><br></li>"
 
     body = index_template.replace("{{article_section}}", article_section)
     body = markdown.markdown(body)

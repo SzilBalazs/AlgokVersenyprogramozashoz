@@ -1,7 +1,9 @@
 # Algok versenyprogramozáshoz
 
-Algok versenyprogramozáshoz célja algoritmusok és <blue>adatszerkezetek</blue> érthető leírása magyarul, 
+Az "Algok versenyprogramozáshoz" célja algoritmusok és adatszerkezetek érthető leírása magyarul, 
 kifejezetten versenyprogramozók számára.
 
-### Cikkek
+## Cikkek
+<ul>
 {{article_section}}
+</ul>
