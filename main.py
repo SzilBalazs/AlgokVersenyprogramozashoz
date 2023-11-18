@@ -19,7 +19,7 @@ def load_header(path):
 
 def create_html(header, md):
     md = "[TOC]\n" + md
-    return header.replace("{{replace}}", markdown.markdown(md, extensions=["abbr", "fenced_code", "toc"]))
+    return header.replace("{{replace}}", markdown.markdown(md, extensions=["footnotes", "abbr", "fenced_code", "toc"]))
 
 
 def build_markdown(header, articles):
