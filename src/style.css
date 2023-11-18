@@ -7,9 +7,26 @@ body {
 }
 
 a {
-  color: #66FCF1;
+  color: #45A29E;
   text-decoration: none;
   font-weight: bold;
+}
+
+.toc {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  left: 2%;
+  top: 10%;
+  width: 15%;
+  height: 80%;
+  position: fixed;
+  overflow: auto;
+}
+
+.toc a {
+  display: block;
+  padding: 8px 16px;
 }
 
 pre .str, code .str { color: #1c99af; } /* string */

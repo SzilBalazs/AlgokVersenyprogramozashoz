@@ -18,7 +18,8 @@ def load_header(path):
 
 
 def create_html(header, md):
-    return header.replace("{{replace}}", markdown.markdown(md, extensions=["fenced_code"]))
+    md = "[TOC]\n" + md
+    return header.replace("{{replace}}", markdown.markdown(md, extensions=["fenced_code", "toc"]))
 
 
 def build_markdown(header, articles):
