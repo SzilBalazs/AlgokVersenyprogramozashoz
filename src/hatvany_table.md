@@ -1,6 +1,6 @@
 # Hatvány tábla
 
-A hatvány tábla egy adatszerkezet ami intervallum lekérdezések $O(\log N)$ időben való
+A hatvány tábla (angolul Sparse Table) egy adatszerkezet ami intervallum lekérdezések $O(\log N)$ időben való
 megválaszolását teszi lehetőve egy állandó tömbön, viszont minimum és
 maximum lekérdezésekre $O(1)$ időben is képes választ adni. Frissitéseket 
 nem tud elvégezni. 
