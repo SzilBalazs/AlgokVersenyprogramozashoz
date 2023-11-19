@@ -34,7 +34,7 @@ A $ht$ értékeit a következő képpen tudjuk kiszámolni, az előző iteráci�
 const int MAXN = 1'000'000;
 const int K = 25;
 
-int ht[K][MAXN];
+int ht[K+1][MAXN];
 
 int f(int a, int b) {
     return min(a, b);
@@ -42,7 +42,7 @@ int f(int a, int b) {
 
 void elokalkulal(int a[], int N) {
     copy(a, a+N, ht[0]);
-    for (int i = 1; i < K; i++) {
+    for (int i = 1; i <= K; i++) {
         for (int j = 0; j + (1 << i) <= N; j++) {
             ht[i][j] = f(ht[i - 1][j], ht[i - 1][j + (1 << (i - 1))]);
         }
