@@ -29,6 +29,12 @@ a {
   padding: 8px 16px;
 }
 
+abbr {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+
 pre .str, code .str { color: #1c99af; } /* string */
 pre .kwd, code .kwd { color: #1f55b9; } /* keyword */
 pre .com, code .com { color: #AEAEAE; font-style: italic; } /* comment */
